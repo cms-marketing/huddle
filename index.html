@@ -1,10 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Huddle landing page with a single introductory section
+    "
+    />
+    <meta name="author" content="Jade Bañares" />
+    <!-- End of Meta Tags-->
+
+    <!-- External Stylesheets & Fonts -->
+    <link rel="stylesheet" href="/tailwind/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of External Sheets -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/9ec85b07cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Huddle</title>
   </head>
-  <body></body>
+  <body
+    class="bg-[url('/images/bg-mobile.svg')] bg-no-repeat sm:bg-[url('/images/bg-desktop.svg')] max-w-[1280px] max-h-[100vh] m-auto bg-violet lg:bg-violet font-openSans"
+  >
+    <!-- Logo -->
+    <nav class="my-[25px] md:my-[55px] mx-5">
+      <a href="/">
+        <img
+          class="max-w-[150px] w-full"
+          src="/images/logo.svg"
+          alt="Huddle Logo"
+      /></a>
+    </nav>
+    <!-- End of Logo -->
+
+    <header
+      class="grid sm:grid-cols-1 md:grid-cols-2 gap-4 justify-items-center items-center pb-[50px]"
+    >
+      <!-- Illustration -->
+      <div class="mx-5 mt-5">
+        <img
+          class="w-full"
+          src="/images/illustration-mockups.svg"
+          alt="Desktop-Mobile Mockup"
+        />
+      </div>
+      <!-- End of Illustration -->
+
+      <!-- Right Content -->
+      <div>
+        <h1
+          class="text-center md:text-left text-white font-bold text-2xl sm:text-3xl md:text-4xl font-poppins mx-5 mt-5 mb-5 text-balance leading-tight"
+        >
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="text-center lg:text-left text-white mx-5 mb-7 text-balance">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <div class="text-center lg:text-left mx-5">
+          <a
+            class="bg-white text-violet py-3 px-12 rounded-3xl shadow-lg hover:text-white hover:bg-softMagenta"
+            href="/"
+            >Register</a
+          >
+        </div>
+      </div>
+
+      <!-- End of Right Content -->
+    </header>
+    <div class="flex justify-center md:justify-end mx-5 mt-10">
+      <ul class="flex gap-3 pb-[70px]">
+        <li>
+          <a
+            href="/"
+            class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="/"
+            class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="/"
+            class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
