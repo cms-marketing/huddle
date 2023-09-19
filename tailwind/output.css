@@ -812,7 +812,7 @@ video {
   display: none;
 }
 
-.max-h-\[100vh\] {
+.max-h-screen {
   max-height: 100vh;
 }
 
@@ -2530,6 +2530,10 @@ video {
     background-image: url('/images/bg-desktop.svg');
   }
 
+  .sm\:bg-repeat {
+    background-repeat: repeat;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2541,6 +2545,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:left-0 {
+    left: 0px;
+  }
+
+  .md\:top-0 {
+    top: 0px;
+  }
+
   .md\:my-\[55px\] {
     margin-top: 55px;
     margin-bottom: 55px;
@@ -2554,6 +2566,14 @@ video {
     justify-content: flex-end;
   }
 
+  .md\:bg-cover {
+    background-size: cover;
+  }
+
+  .md\:bg-center {
+    background-position: center;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -2561,17 +2581,6 @@ video {
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 976px) {
-  .lg\:bg-violet {
-    --tw-bg-opacity: 1;
-    background-color: hsl(257 40% 49% / var(--tw-bg-opacity));
-  }
-
-  .lg\:text-left {
-    text-align: left;
   }
 }
 
