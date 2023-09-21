@@ -33,13 +33,13 @@
     <title>Huddle</title>
   </head>
   <body
-    class="bg-[url('/images/bg-mobile.svg')] bg-no-repeat sm:bg-repeat md:bg-cover md:bg-center md:top-0 md:left-0 max-h-screen overflow-hidden sm:bg-[url('/images/bg-desktop.svg')] max-w-[1280px] m-auto bg-violet font-openSans"
+    class="bg-[url('/images/bg-mobile.svg')] bg-no-repeat sm:bg-repeat md:bg-cover md:bg-left md:top-0 md:left-0 max-h-screen overflow-hidden sm:bg-[url('/images/bg-desktop.svg')] max-w-[1180px] m-auto bg-violet font-openSans"
   >
     <!-- Logo -->
     <nav class="my-[25px] md:my-[55px] mx-5">
-      <a href="/">
+      <a href="/" aria-label="Logo">
         <img
-          class="max-w-[150px] w-full"
+          class="max-w-[180px] w-full"
           src="/images/logo.svg"
           alt="Huddle Logo"
       /></a>
@@ -62,9 +62,10 @@
       <!-- Right Content -->
       <div>
         <h1
-          class="text-center md:text-left text-white font-bold text-2xl sm:text-3xl md:text-4xl font-poppins mx-5 mt-5 mb-5 text-balance leading-tight"
+          class="text-center md:text-left text-white font-bold text-2xl sm:text-3xl md:text-4xl font-poppins mx-5 mt-5 mb-5 text-balance leading-relaxed"
         >
-          Build The Community Your Fans Will Love
+          Build The Community <br />
+          Your Fans Will Love
         </h1>
         <p class="text-center md:text-left text-white mx-5 mb-7 text-balance">
           Huddle re-imagines the way we build communities. You have a voice, but
@@ -73,8 +74,9 @@
         </p>
         <div class="text-center md:text-left mx-5">
           <a
-            class="bg-white text-violet py-3 px-12 rounded-3xl shadow-lg hover:text-white hover:bg-softMagenta animate-spin"
+            class="bg-white text-violet py-3 px-[4rem] rounded-3xl shadow-lg hover:text-white hover:bg-softMagenta animate-spin"
             href="/"
+            aria-label="Tap to Register"
             >Register</a
           >
         </div>
@@ -82,12 +84,13 @@
 
       <!-- End of Right Content -->
     </header>
-    <div class="flex justify-center md:justify-end mx-5 mt-10">
+    <div class="flex justify-center md:justify-end mx-5 mt-12">
       <ul class="flex gap-3 pb-[70px]">
         <li>
           <a
             href="/"
             class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            aria-label="Facebook Account"
             ><i class="fa fa-facebook"></i
           ></a>
         </li>
@@ -95,6 +98,7 @@
           <a
             href="/"
             class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            aria-label="Twitter Account"
             ><i class="fa fa-twitter"></i
           ></a>
         </li>
@@ -102,6 +106,7 @@
           <a
             href="/"
             class="border-solid border-2 px-3 py-2 border-white text-white rounded-[50%] hover:text-softMagenta hover:border-softMagenta"
+            aria-label="Instagram Account"
             ><i class="fa fa-instagram"></i
           ></a>
         </li>
