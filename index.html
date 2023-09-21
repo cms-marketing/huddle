@@ -33,10 +33,10 @@
     <title>Huddle</title>
   </head>
   <body
-    class="bg-[url('/images/bg-mobile.svg')] bg-no-repeat sm:bg-repeat md:bg-cover md:bg-left md:top-0 md:left-0 max-h-screen overflow-hidden sm:bg-[url('/images/bg-desktop.svg')] max-w-[1180px] m-auto bg-violet font-openSans"
+    class="bg-[url('/images/bg-mobile.svg')] bg-no-repeat sm:bg-repeat md:bg-cover md:bg-left md:top-0 md:left-0 max-h-screen overflow-hidden sm:bg-[url('/images/bg-desktop.svg')] max-w-[1380px] m-auto bg-violet font-openSans"
   >
     <!-- Logo -->
-    <nav class="my-[25px] md:my-[55px] mx-5">
+    <nav role="navigation" class="my-[25px] md:my-[55px] mx-5">
       <a href="/" aria-label="Logo">
         <img
           class="max-w-[180px] w-full"
@@ -47,6 +47,7 @@
     <!-- End of Logo -->
 
     <header
+      role="contentinfo"
       class="grid sm:grid-cols-1 md:grid-cols-2 gap-4 justify-items-center items-center pb-[50px]"
     >
       <!-- Illustration -->
@@ -84,7 +85,7 @@
 
       <!-- End of Right Content -->
     </header>
-    <div class="flex justify-center md:justify-end mx-5 mt-12">
+    <section class="flex justify-center md:justify-end mx-5 mt-12">
       <ul class="flex gap-3 pb-[70px]">
         <li>
           <a
@@ -111,6 +112,6 @@
           ></a>
         </li>
       </ul>
-    </div>
+    </section>
   </body>
 </html>
